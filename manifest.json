@@ -4,14 +4,22 @@
   "description": "Stop doomscrolling and being a gooner",
   "version": "1.0",
   "icons": {
-    "logo": "logo.png"
+    "512": "logo.png"
   },
+  "content_scripts": [
+  {
+    "matches": [
+      "*://*.instagram.com/*" 
+    ],
+    "js": ["cleaner.js"]
+    }
+  ],
   "background": {
     "service_worker": "cleaner.js"
   },
   "action": {
     "default_icon": {
-        "logo": "logo.png"
+        "512": "logo.png"
     }
   },
   "permissions": ["activeTab", "scripting"], 
