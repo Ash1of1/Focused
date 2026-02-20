@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name         Instagram Focus Mode
+// @description  Blocks Reels, Explore, and Main Feed on Instagram
+// @match        *://*.instagram.com/*
+// @run-at       document-start
+// ==/UserScript==
+
+
 const style = document.createElement('style');
 style.innerHTML = '[data-pagelet="story_tray"], article { display: none !important; }';
 document.head.appendChild(style);
