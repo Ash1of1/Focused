@@ -11,7 +11,7 @@
     "matches": [
       "*://*.instagram.com/*" 
     ],
-    "js": ["cleaner.js"]
+    "js": ["ios_focused.user.js"]
     }
   ]
   }
